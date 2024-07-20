@@ -13,8 +13,8 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: 'Shadcn UI Base',
-  description: 'Shadcn UI Base',
+  title: '天樹際 テンプレート',
+  description: '天樹際 テンプレート',
 }
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <head />
       <body
         className={cn(
