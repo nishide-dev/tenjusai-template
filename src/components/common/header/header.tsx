@@ -69,7 +69,7 @@ const Header: React.FC<HeaderProps> = ({ pathname }) => {
       : contents.style.textColorForgroundLight
 
   const navigationMenuTriggerStyle = cva(
-    `group inline-flex h-10 w-max items-center font-semibold justify-center rounded-md bg-background bg-transparent ${textColor} px-4 py-2 text-sm font-medium transition-colors hover:bg-transparent hover:${textColor} focus:bg-transparent focus:${textColorForground} focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-transparent/50 data-[state=open]:bg-transparent/50`,
+    `group inline-flex h-10 w-max items-center font-semibold justify-center rounded-md bg-background bg-transparent ${textColor} px-4 py-2 text-md md:text-lg font-medium transition-colors hover:bg-transparent hover:${textColor} focus:bg-transparent focus:${textColorForground} focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-transparent/50 data-[state=open]:bg-transparent/50`,
   )
 
   return (
@@ -83,7 +83,10 @@ const Header: React.FC<HeaderProps> = ({ pathname }) => {
       >
         <NavbarContent>
           <NavbarBrand>
-            <Link href={`/`} className={`${textColor} font-semibold`}>
+            <Link
+              href={`/`}
+              className={`${textColor} font-semibold ${navigationMenuTriggerStyle()}`}
+            >
               {contents.header.title}
             </Link>
           </NavbarBrand>

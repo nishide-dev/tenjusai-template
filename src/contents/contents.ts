@@ -10,6 +10,10 @@ export const contents = {
       bgColor: 'bg-sky-400',
     },
   },
+  pamphlet: {
+    title: 'パンフレットはこちら',
+    url: 'https://example.com',
+  },
   style: {
     bgColorForgroundLight: 'bg-gray-100',
     bgColorForgroundDark: 'bg-gray-900',

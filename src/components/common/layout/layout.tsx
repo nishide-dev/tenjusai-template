@@ -16,7 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
   return (
     <NextUIProvider>
-      <main className={kosugiMaru.className}>
+      <main className={`${kosugiMaru.className} overflow-x-hidden`}>
         <Header pathname={pathname} />
         {children}
       </main>

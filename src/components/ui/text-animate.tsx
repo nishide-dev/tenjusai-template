@@ -233,7 +233,7 @@ const TextAnimate: FC<Props> = ({
   if (type === 'rollIn' || type === 'whipIn') {
     return (
       <h2
-        className={`mt-10 text-3xl font-black text-black dark:text-neutral-100 px-8 md:text-5xl ${className}`}
+        className={`text-3xl font-black text-black dark:text-neutral-100 px-8 md:text-5xl ${className}`}
       >
         {text.split(' ').map((word, index) => {
           return (
@@ -278,7 +278,7 @@ const TextAnimate: FC<Props> = ({
       variants={container}
       initial="hidden"
       animate="visible"
-      className={`mt-10 text-4xl font-black text-black dark:text-neutral-100 px-8 md:text-5xl ${className}`}
+      className={`text-4xl font-black text-black dark:text-neutral-100 px-8 md:text-5xl ${className}`}
       {...props}
     >
       {letters.map((letter, index) => (

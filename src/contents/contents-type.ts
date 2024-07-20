@@ -8,6 +8,10 @@ export type ContentsType = {
       bgColor: string
     }
   }
+  pamphlet: {
+    title: string
+    url: string
+  }
   style: {
     bgColorForgroundLight: 'bg-gray-100' | 'bg-gray-900'
     bgColorForgroundDark: 'bg-gray-100' | 'bg-gray-900'
