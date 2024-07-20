@@ -2,6 +2,7 @@ import { NextPage } from 'next'
 import { Image } from '@nextui-org/react'
 
 import HomeTitle from '@/components/pages/home/home-title'
+import SponsorsContainer from '@/components/common/sponsors/sponsors-container'
 
 import { contents } from '@/contents/contents'
 
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
           <Image
             className="-z-10 object-cover w-screen h-screen fixed rounded-none"
             src={'/images/sample/blue-pastel.jpg'}
-            alt="light network"
+            alt="background"
           />
           <div
             className={`absolute inset-0 ${contents.pages.home.bgOpacity} ${contents.pages.home.bgColor} h-screen`}
@@ -21,6 +22,8 @@ const Home: NextPage = () => {
             <HomeTitle />
           </div>
         </div>
+        <div className="h-screen"></div>
+        <SponsorsContainer />
       </div>
     </>
   )
