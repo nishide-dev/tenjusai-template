@@ -1,4 +1,13 @@
 export type ContentsType = {
+  pages: {
+    home: {
+      title: string
+      th: number
+      bgImage: string
+      bgOpacity: string
+      bgColor: string
+    }
+  }
   style: {
     bgColorForgroundLight: 'bg-gray-100' | 'bg-gray-900'
     bgColorForgroundDark: 'bg-gray-100' | 'bg-gray-900'

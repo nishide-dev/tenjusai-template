@@ -1,6 +1,15 @@
 import { ContentsType } from '@/contents/contents-type'
 
 export const contents = {
+  pages: {
+    home: {
+      title: '天樹祭',
+      th: 41,
+      bgImage: '/images/sample/blue-pastel.jpg',
+      bgOpacity: 'bg-opacity-30',
+      bgColor: 'bg-sky-400',
+    },
+  },
   style: {
     bgColorForgroundLight: 'bg-gray-100',
     bgColorForgroundDark: 'bg-gray-900',
@@ -9,10 +18,10 @@ export const contents = {
     textColorForgroundLight: 'text-black',
     textColorForgroundDark: 'text-white',
     lightColor: 'light',
-    darkColor: 'light', // ルートカラーを変更する場合は、ここを変更
+    darkColor: 'dark', // ルートカラーを変更する場合は、ここを変更
   },
   header: {
-    title: '天樹際',
+    title: '天樹祭',
     stage: 'ステージ',
     event: 'イベント',
     lab: '研究室',

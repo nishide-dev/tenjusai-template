@@ -13,8 +13,8 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: '天樹際 テンプレート',
-  description: '天樹際 テンプレート',
+  title: '天樹祭 テンプレート',
+  description: '天樹祭 テンプレート',
 }
 
 export default function RootLayout({

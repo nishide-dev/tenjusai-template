@@ -3,14 +3,20 @@
 import { NextUIProvider } from '@nextui-org/react'
 import React from 'react'
 import { usePathname } from 'next/navigation'
+import { Kosugi_Maru } from 'next/font/google'
 
 import Header from '@/components/common/header/header'
+
+const kosugiMaru = Kosugi_Maru({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
   return (
     <NextUIProvider>
-      <main>
+      <main className={kosugiMaru.className}>
         <Header pathname={pathname} />
         {children}
       </main>
