@@ -7,7 +7,7 @@ export const contents = {
       th: 41,
       bgImage: '/images/sample/blue-pastel.jpg',
       bgOpacity: 'bg-opacity-30',
-      bgColor: 'bg-sky-400',
+      bgColor: 'bg-sky-300',
     },
   },
   pamphlet: {

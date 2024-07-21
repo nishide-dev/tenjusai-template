@@ -72,11 +72,20 @@ const config = {
         marquee: {
           to: { transform: 'translateX(-50%)' },
         },
+        shimmer: {
+          from: {
+            backgroundPosition: '0 0',
+          },
+          to: {
+            backgroundPosition: '-200% 0',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         marquee: 'marquee var(--duration, 30s) linear infinite',
+        shimmer: 'shimmer 2s linear infinite',
       },
     },
   },

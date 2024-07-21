@@ -1,28 +1,35 @@
 import React from 'react'
 
-import { Button, Link } from '@nextui-org/react'
+import Link from 'next/link'
+
+import UnapologetiButton from '@/components/common/buttons/unapologeti-button'
+import { Color } from '@/lib/types'
 
 interface DownloadButtonProps {
   text: string
   href: string
   className?: string
+  color?: Color
+  dark?: boolean
 }
 
 const DownloadButton: React.FC<DownloadButtonProps> = ({
   text,
   href,
   className,
+  color,
+  dark,
 }) => {
   return (
     <>
-      <Button
-        size="lg"
-        as={Link}
-        href={href}
-        className={`bg-blue-500 hover:bg-blue-700 text-white text-sm md:text-md rounded-full ${className}`}
-      >
-        {text}
-      </Button>
+      <Link href={href} passHref>
+        <UnapologetiButton
+          text={text}
+          className={className}
+          color={color}
+          dark={dark}
+        />
+      </Link>
     </>
   )
 }
