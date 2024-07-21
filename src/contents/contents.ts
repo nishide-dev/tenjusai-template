@@ -31,4 +31,9 @@ export const contents = {
     lab: '研究室',
     stall: '屋台',
   },
+  footer: {
+    title: '天樹祭 2024',
+    description: '豊田工業大学 大学祭',
+    copyRight: '© 2024 豊田工業大学 天樹祭実行委員会',
+  },
 } as const satisfies Partial<ContentsType>

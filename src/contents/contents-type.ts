@@ -29,4 +29,9 @@ export type ContentsType = {
     lab: string
     stall: string
   }
+  footer: {
+    title: string
+    description: string
+    copyRight: string
+  }
 }
