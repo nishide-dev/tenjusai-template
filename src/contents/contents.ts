@@ -16,6 +16,10 @@ export const contents = {
       bgColor: 'bg-none',
       dark: false,
       fullScreen: false,
+      campusMap: {
+        pcImage: '/images/pages/home/campus-pc.png',
+        mobileImage: '/images/pages/home/campus-mobile.png',
+      },
     },
     stage: {
       stages: stages,

@@ -16,6 +16,10 @@ export type ContentsType = {
       bgColor: string
       dark: boolean
       fullScreen: boolean
+      campusMap: {
+        pcImage: string
+        mobileImage: string
+      }
     }
     stage: {
       stages: Stage[]

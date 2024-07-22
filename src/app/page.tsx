@@ -3,6 +3,7 @@ import { Image } from '@nextui-org/react'
 
 import HomeTitle from '@/components/pages/home/home-title'
 import HomeThumbnail from '@/components/pages/home/home-thumbnail'
+import HomeCampusMapContainer from '@/components/pages/home/home-campus-map-container'
 
 import { contents } from '@/contents/contents'
 
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="h-screen"></div>
+        <HomeCampusMapContainer />
       </div>
     </>
   )
