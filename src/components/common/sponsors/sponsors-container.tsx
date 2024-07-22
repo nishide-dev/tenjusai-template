@@ -1,6 +1,7 @@
 import React from 'react'
 
 import SponsorsMarquee from '@/components/common/sponsors/sponsors-marquee'
+import SponsorsDispatchCompaniesContainer from '@/components/common/sponsors/sponsors-dispatch-companies-container'
 import UnapologetiTitle from '@/components/common/titles/unapologeti-title'
 import ContainerTitle from '@/components/common/container/container-title'
 
@@ -23,6 +24,7 @@ const SponsorsContainer: React.FC = () => {
             color="yellow"
           />
         </div>
+        <SponsorsDispatchCompaniesContainer />
       </div>
     </>
   )

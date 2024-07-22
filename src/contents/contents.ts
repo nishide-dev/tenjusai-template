@@ -4,6 +4,7 @@ import { stages } from '@/data/stage/stage'
 import { events } from '@/data/event/event'
 import { labs } from '@/data/lab/lab'
 import { stalls } from '@/data/stall/stall'
+import { dispatchCompanies } from '@/data/sponsors/dispatch-companies'
 
 export const contents = {
   pages: {
@@ -49,6 +50,9 @@ export const contents = {
     event: 'イベント',
     lab: '研究室',
     stall: '屋台',
+  },
+  sponsors: {
+    dispatchCompanies: dispatchCompanies,
   },
   footer: {
     title: '天樹祭 2024',

@@ -4,6 +4,7 @@ import { Stage } from '@/data/stage/stage'
 import { Event } from '@/data/event/event'
 import { Lab } from '@/data/lab/lab'
 import { Stall } from '@/data/stall/stall'
+import { DispatchCompany } from '@/data/sponsors/dispatch-companies'
 
 export type ContentsType = {
   pages: {
@@ -65,6 +66,9 @@ export type ContentsType = {
     event: string
     lab: string
     stall: string
+  }
+  sponsors: {
+    dispatchCompanies: DispatchCompany[]
   }
   footer: {
     title: string
