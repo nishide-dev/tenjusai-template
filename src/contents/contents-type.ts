@@ -1,3 +1,5 @@
+import { Color } from '@/lib/types'
+
 export type ContentsType = {
   pages: {
     home: {
@@ -13,8 +15,8 @@ export type ContentsType = {
     url: string
   }
   style: {
-    bgColorForgroundLight: 'bg-gray-100' | 'bg-gray-900'
-    bgColorForgroundDark: 'bg-gray-100' | 'bg-gray-900'
+    bgColorForgroundLight: `bg-${Color}-100` | `bg-${Color}-900`
+    bgColorForgroundDark: `bg-${Color}-100` | `bg-${Color}-900`
     textColorLight: 'text-gray-100' | 'text-gray-900'
     textColorDark: 'text-gray-100' | 'text-gray-900'
     textColorForgroundLight: 'text-white' | 'text-black'
@@ -33,5 +35,7 @@ export type ContentsType = {
     title: string
     description: string
     copyRight: string
+    bgColor: string
+    textColor: string
   }
 }

@@ -2,7 +2,6 @@ import { NextPage } from 'next'
 import { Image } from '@nextui-org/react'
 
 import HomeTitle from '@/components/pages/home/home-title'
-import SponsorsContainer from '@/components/common/sponsors/sponsors-container'
 
 import { contents } from '@/contents/contents'
 
@@ -23,7 +22,6 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="h-screen"></div>
-        <SponsorsContainer />
       </div>
     </>
   )

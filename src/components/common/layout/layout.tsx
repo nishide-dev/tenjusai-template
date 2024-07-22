@@ -7,6 +7,7 @@ import { Kosugi_Maru } from 'next/font/google'
 
 import Header from '@/components/common/header/header'
 import Footer from '@/components/common/footer/footer'
+import SponsorsContainer from '@/components/common/sponsors/sponsors-container'
 
 const kosugiMaru = Kosugi_Maru({
   weight: '400',
@@ -20,6 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <main className={`${kosugiMaru.className} overflow-x-hidden`}>
         <Header pathname={pathname} />
         {children}
+        <SponsorsContainer />
         <Footer />
       </main>
     </NextUIProvider>
