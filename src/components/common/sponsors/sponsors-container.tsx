@@ -1,6 +1,7 @@
 import React from 'react'
 
 import SponsorsMarquee from '@/components/common/sponsors/sponsors-marquee'
+import UnapologetiTitle from '@/components/common/titles/unapologeti-title'
 import ContainerTitle from '@/components/common/container/container-title'
 
 import { contents } from '@/contents/contents'
@@ -15,6 +16,13 @@ const SponsorsContainer: React.FC = () => {
           <ContainerTitle title="SPONSORS" className="text-center" />
         </div>
         <SponsorsMarquee />
+        <div className="w-full max-w-xs sm:max-w-xs h-full mx-auto mt-16">
+          <UnapologetiTitle
+            title="派遣企業の会"
+            className="text-center"
+            color="yellow"
+          />
+        </div>
       </div>
     </>
   )

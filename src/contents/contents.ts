@@ -14,6 +14,7 @@ export const contents = {
       bgOpacity: 'bg-opacity-100',
       bgColor: 'bg-none',
       dark: false,
+      fullScreen: false,
     },
     stage: {
       stages: stages,
@@ -40,7 +41,7 @@ export const contents = {
     textColorForgroundLight: 'text-black',
     textColorForgroundDark: 'text-white',
     lightColor: 'light',
-    darkColor: 'dark', // ルートカラーを変更する場合は、ここを変更
+    darkColor: 'light', // ルートカラーを変更する場合は、ここを変更
   },
   header: {
     title: '天樹祭',

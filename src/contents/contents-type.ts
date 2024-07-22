@@ -14,6 +14,7 @@ export type ContentsType = {
       bgOpacity: string
       bgColor: string
       dark: boolean
+      fullScreen: boolean
     }
     stage: {
       stages: Stage[]
