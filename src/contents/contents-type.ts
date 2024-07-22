@@ -8,6 +8,7 @@ export type ContentsType = {
       bgImage: string
       bgOpacity: string
       bgColor: string
+      dark: boolean
     }
   }
   pamphlet: {
@@ -15,10 +16,26 @@ export type ContentsType = {
     url: string
   }
   style: {
-    bgColorForgroundLight: `bg-${Color}-100` | `bg-${Color}-900`
-    bgColorForgroundDark: `bg-${Color}-100` | `bg-${Color}-900`
-    textColorLight: 'text-gray-100' | 'text-gray-900'
-    textColorDark: 'text-gray-100' | 'text-gray-900'
+    bgColorForgroundLight:
+      | `bg-${Color}-100`
+      | `bg-${Color}-900`
+      | `bg-white`
+      | `bg-black`
+    bgColorForgroundDark:
+      | `bg-${Color}-100`
+      | `bg-${Color}-900`
+      | `bg-white`
+      | `bg-black`
+    textColorLight:
+      | 'text-gray-100'
+      | 'text-gray-900'
+      | 'text-white'
+      | 'text-black'
+    textColorDark:
+      | 'text-gray-100'
+      | 'text-gray-900'
+      | 'text-white'
+      | 'text-black'
     textColorForgroundLight: 'text-white' | 'text-black'
     textColorForgroundDark: 'text-white' | 'text-black'
     lightColor: 'light' | 'dark'

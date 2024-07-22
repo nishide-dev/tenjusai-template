@@ -17,7 +17,7 @@ const UnapologetiButton: React.FC<UnapologetiButtonProps> = ({
 }) => {
   const bgColor = `bg-${color ? color : 'yellow'}-300`
   const borderColor = `border-${dark ? 'white' : 'black'}`
-  const textColor = `text-${dark ? 'white' : 'black'}`
+  const textColor = `text-${dark ? 'black' : 'black'}` // text-whiteにするかは要検討
   return (
     <>
       <button

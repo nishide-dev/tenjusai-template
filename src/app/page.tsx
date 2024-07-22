@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <div className="fixed top-0 left-0 w-full h-screen z-10">
           <Image
             className="-z-10 object-cover w-screen h-screen fixed rounded-none"
-            src={'/images/sample/blue-pastel.jpg'}
+            src={contents.pages.home.bgImage}
             alt="background"
           />
           <div

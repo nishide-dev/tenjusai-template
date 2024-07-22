@@ -77,10 +77,9 @@ const ShiftCard = React.forwardRef<HTMLDivElement, ShiftCardProps>(
       <motion.div
         ref={ref}
         className={cn(
-          'min-h-[240px] w-[280px] md:min-h-[300px] md:w-[300px]',
-          ' group relative flex flex-col items-center justify-between overflow-hidden rounded-xl  p-3 text-sm ',
-          ' hover:cursor-pointer bg-card  ',
-          'shadow-[0px_1px_1px_0px_rgba(0,0,0,0.05),0px_1px_1px_0px_rgba(255,252,240,0.5)_inset,0px_0px_0px_1px_hsla(0,0%,100%,0.1)_inset,0px_0px_1px_0px_rgba(28,27,26,0.5)]',
+          'min-h-[240px] w-[300px] md:min-h-[300px] md:w-[320px]',
+          ' group relative flex flex-col items-center justify-between overflow-hidden p-3 text-sm border border-black',
+          ' hover:cursor-pointer',
           /* 
           Applies a multi-layer shadow effect in dark mode:
           1. Two subtle white inset shadows: one horizontal at 1px height, and one around the entire border at 1px width, both with a very light opacity of 0.03, creating a slight inner glow.
@@ -88,7 +87,6 @@ const ShiftCard = React.forwardRef<HTMLDivElement, ShiftCardProps>(
               - A basic 1px black border shadow with 10% opacity to subtly outline the element.
               - Three progressively larger diffuse shadows at 2px, 4px, and 8px, each with 10% opacity, creating a depth effect that enhances the element's visual separation from the background.
           */
-          'dark:shadow-[0_1px_0_0_rgba(255,255,255,0.03)_inset,0_0_0_1px_rgba(255,255,255,0.03)_inset,0_0_0_1px_rgba(0,0,0,0.1),0_2px_2px_0_rgba(0,0,0,0.1),0_4px_4px_0_rgba(0,0,0,0.1),0_8px_8px_0_rgba(0,0,0,0.1)]',
           className,
         )}
         initial={{ y: 20, opacity: 0 }}

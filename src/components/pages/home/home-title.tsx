@@ -31,6 +31,7 @@ const HomeTitle: React.FC = () => {
               href={contents.pamphlet.url}
               className="mx-8"
               color="yellow"
+              dark={contents.pages.home.dark}
             />
           </div>
         </div>

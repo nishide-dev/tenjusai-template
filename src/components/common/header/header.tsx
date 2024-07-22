@@ -24,6 +24,8 @@ import {
 
 import { contents } from '@/contents/contents'
 
+import DownloadButton from '@/components/common/buttons/download-button'
+
 interface HeaderProps {
   pathname: string
 }
@@ -183,6 +185,15 @@ const Header: React.FC<HeaderProps> = ({ pathname }) => {
                     {contents.header.stall}
                   </NavigationMenuLink>
                 </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <DownloadButton
+                  text={contents.pamphlet.title}
+                  href={contents.pamphlet.url}
+                  className="mx-8 mt-8"
+                  color="yellow"
+                  dark={contents.pages.home.dark}
+                />
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>

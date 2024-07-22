@@ -5,9 +5,10 @@ export const contents = {
     home: {
       title: '天樹祭',
       th: 41,
-      bgImage: '/images/sample/blue-pastel.jpg',
-      bgOpacity: 'bg-opacity-30',
-      bgColor: 'bg-sky-300',
+      bgImage: '/images/sample/tenju.jpg',
+      bgOpacity: 'bg-opacity-100',
+      bgColor: 'bg-none',
+      dark: false,
     },
   },
   pamphlet: {
@@ -15,7 +16,7 @@ export const contents = {
     url: 'https://example.com',
   },
   style: {
-    bgColorForgroundLight: 'bg-gray-100',
+    bgColorForgroundLight: 'bg-white',
     bgColorForgroundDark: 'bg-gray-900',
     textColorLight: 'text-gray-900',
     textColorDark: 'text-gray-100',
