@@ -8,6 +8,7 @@ import { contents } from '@/contents/contents'
 
 interface ScreenShiftCardProps {
   title: string
+  subtitle: string
   description: string
   image: string
   layoutId: string
@@ -16,6 +17,7 @@ interface ScreenShiftCardProps {
 
 const ScreenShiftCard: React.FC<ScreenShiftCardProps> = ({
   title,
+  subtitle,
   description,
   image,
   className,
@@ -82,10 +84,10 @@ const ScreenShiftCard: React.FC<ScreenShiftCardProps> = ({
       <div
         className={`flex w-full flex-col gap-1 ${contents.style.bgColorForgroundDark} border-t border-t-black/10 px-4 pb-4`}
       >
-        <div className="font-sans font-medium text-white flex gap-1 pt-2.5 items-center">
-          <p>詳しくはこちら</p>
+        <div className="font-sans font-medium text-white flex gap-1 py-2 items-center">
+          <p className="text-lg">{subtitle}</p>
         </div>
-        <div className="w-full text-pretty font-sans leading-4 text-neutral-200 pb-2 h-screen">
+        <div className="w-full text-pretty font-sans leading-4 text-neutral-200 pb-2 h-screen text-lg">
           {description}
         </div>
       </div>

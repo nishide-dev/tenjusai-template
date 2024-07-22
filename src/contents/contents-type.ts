@@ -1,5 +1,10 @@
 import { Color } from '@/lib/types'
 
+import { Stage } from '@/data/stage/stage'
+import { Event } from '@/data/event/event'
+import { Lab } from '@/data/lab/lab'
+import { Stall } from '@/data/stall/stall'
+
 export type ContentsType = {
   pages: {
     home: {
@@ -9,6 +14,18 @@ export type ContentsType = {
       bgOpacity: string
       bgColor: string
       dark: boolean
+    }
+    stage: {
+      stages: Stage[]
+    }
+    event: {
+      events: Event[]
+    }
+    stall: {
+      stalls: Stall[]
+    }
+    lab: {
+      labs: Lab[]
     }
   }
   pamphlet: {

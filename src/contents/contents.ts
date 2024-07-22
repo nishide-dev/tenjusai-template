@@ -1,5 +1,10 @@
 import { ContentsType } from '@/contents/contents-type'
 
+import { stages } from '@/data/stage/stage'
+import { events } from '@/data/event/event'
+import { labs } from '@/data/lab/lab'
+import { stalls } from '@/data/stall/stall'
+
 export const contents = {
   pages: {
     home: {
@@ -9,6 +14,18 @@ export const contents = {
       bgOpacity: 'bg-opacity-100',
       bgColor: 'bg-none',
       dark: false,
+    },
+    stage: {
+      stages: stages,
+    },
+    event: {
+      events: events,
+    },
+    lab: {
+      labs: labs,
+    },
+    stall: {
+      stalls: stalls,
     },
   },
   pamphlet: {

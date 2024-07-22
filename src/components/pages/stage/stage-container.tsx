@@ -12,24 +12,16 @@ const StageContainer: React.FC = () => {
         <div className="w-full max-w-sm sm:max-w-5xl h-full mx-auto">
           <ContainerTitle title="STAGE EVENTS" className="text-center" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-8 md:py-12">
-            <ScreenShiftCard
-              layoutId={`1`}
-              title="バンド"
-              description="Description"
-              image="/images/sample/blue-pastel.jpg"
-            />
-            <ScreenShiftCard
-              layoutId={`2`}
-              title="バンド"
-              description="Description"
-              image="/images/sample/pink-pastel.jpg"
-            />
-            <ScreenShiftCard
-              layoutId={`3`}
-              title="バンド"
-              description="Description"
-              image="/images/sample/pink-pastel.jpg"
-            />
+            {contents.pages.stage.stages.map((stage, index) => (
+              <ScreenShiftCard
+                key={index}
+                layoutId={`${index}`}
+                title={stage.performer}
+                subtitle={`${stage.date} ${stage.time}`}
+                description={stage.description}
+                image={stage.image}
+              />
+            ))}
           </div>
         </div>
       </div>
